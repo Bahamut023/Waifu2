@@ -27,7 +27,7 @@ public class Tasks extends AppCompatActivity {
             finish();
         });
         Run_Notes.setOnClickListener(view -> {
-            Intent intent = new Intent(this, Tasks.class);
+            Intent intent = new Intent(this, Notes.class);
             startActivity(intent);
             finish();
         });

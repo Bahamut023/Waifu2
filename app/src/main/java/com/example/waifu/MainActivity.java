@@ -6,9 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageButton;
 import android.widget.TextView;
-
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -30,15 +29,14 @@ public class MainActivity extends AppCompatActivity {
             finish();
         });
         Run_Notes.setOnClickListener(view -> {
-            Intent intent = new Intent(this, Tasks.class);
+            Intent intent = new Intent(this, Notes.class);
             startActivity(intent);
             finish();
         });
-        TextView date = findViewById(R.id.date);
-        SimpleDateFormat dfDate_day= new SimpleDateFormat("dd/MM/yyyy");
-        String dt="";
-        Calendar c = Calendar.getInstance();
-        //data=dfDate_day.format(c.getTime());
-        date.setText(dt);
+        TextView tv = findViewById(R.id.date);
+
+        Date cal = Calendar.getInstance().getTime();
+        String dt = cal.toLocaleString();
+        tv.setText(dt);
     }
 }
