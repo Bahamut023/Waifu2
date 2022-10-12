@@ -26,6 +26,8 @@
                 android:value="" />
         </activity>
         <activity android:name=".MainActivity"/>
+        <activity android:name=".Tasks"/>
+        <activity android:name=".Notes"/>
     </application>
 
 </manifest>

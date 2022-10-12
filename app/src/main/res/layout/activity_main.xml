@@ -16,7 +16,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.85" />
+        app:layout_constraintVertical_bias="0.85"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -24,7 +25,8 @@
         android:layout_height="349dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/img_4" />
+        app:srcCompat="@drawable/img_4"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -34,7 +36,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/img_5" />
+        app:srcCompat="@drawable/img_5"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/textView2"
@@ -67,7 +70,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" />
+            android:orientation="vertical"
+            tools:ignore="UselessLeaf" />
     </ScrollView>
 
     <ImageView
@@ -81,7 +85,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.272"
-        app:srcCompat="@drawable/img_7" />
+        app:srcCompat="@drawable/img_7"
+        tools:ignore="ContentDescription" />
+
+    <DigitalClock
+        android:layout_width="73dp"
+        android:layout_height="48dp"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071" />
 
     <ImageView
         android:id="@+id/imageView9"
@@ -94,21 +110,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/img_7" />
+        app:srcCompat="@drawable/img_7"
+        tools:ignore="ContentDescription" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.26"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.08" />
-
-    <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -130,7 +136,7 @@
         app:layout_constraintVertical_bias="0.11" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/run_tasks"
         android:layout_width="140dp"
         android:layout_height="65dp"
         android:backgroundTint="#B8BCFF"
@@ -138,10 +144,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/img_1"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/run_notes"
         android:layout_width="140dp"
         android:layout_height="65dp"
         android:backgroundTint="#B8BCFF"
@@ -149,9 +155,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/imageButton3"
+        app:layout_constraintStart_toEndOf="@+id/run_main"
         app:srcCompat="@drawable/img"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -163,13 +169,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.8"
-        app:srcCompat="@drawable/img_8" />
+        app:srcCompat="@drawable/img_8"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="131dp"
         android:layout_height="71dp"
-        android:text="I’m allways with you 🌸"
+        android:text="@string/i_m_allways_with_you"
         android:textColor="#CD79BF"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -180,7 +187,7 @@
         app:layout_constraintVertical_bias="0.701" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/run_main"
         android:layout_width="150dp"
         android:layout_height="65dp"
         android:backgroundTint="#B8BCFF"
@@ -190,6 +197,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/img_9"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

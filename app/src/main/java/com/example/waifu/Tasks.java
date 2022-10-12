@@ -1,20 +1,17 @@
 package com.example.waifu;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageButton;
-import android.widget.TextView;
 
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class Tasks extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.tasks);
 
         ImageButton Run_Tasks = findViewById(R.id.run_tasks);
         ImageButton Run_Notes = findViewById(R.id.run_notes);
@@ -34,11 +31,5 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         });
-        TextView date = findViewById(R.id.date);
-        SimpleDateFormat dfDate_day= new SimpleDateFormat("dd/MM/yyyy");
-        String dt="";
-        Calendar c = Calendar.getInstance();
-        //data=dfDate_day.format(c.getTime());
-        date.setText(dt);
     }
 }
